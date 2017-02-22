@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_7</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+            <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+            <button id="valider" name="valider" onclick="check()">Valider</button>
+        </form>
+  <script>
+  /*Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants :
+      Multiplier la pointure par 2
+      Ajouter 5 au résultat
+      Multiplier le tout par 50
+      Soustraire l’année de naissance
+      Ajouter au tout 1766
+  La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure. Attention : n'utiliser une seule variable « resultat ».*/
+  function check(){
+    /*Déclaration des variableinput*/
+    var foot = document.getElementById('pointure').value;
+    var born = document.getElementById('annee').value;
+    //Déclaration des variables resultat
+    var result = ((parseInt(((foot*2)+5)*50)-parseInt(born)))+1766;
+    alert('Voici le résultat : ' + result);
+  }
+  </script>
+    </body>
+</html>
