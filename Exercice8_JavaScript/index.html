@@ -14,7 +14,9 @@
   document.getElementById('valider').addEventListener('click',function(){
     var age = document.getElementById('age').value;
   /*Déclaration des différentes conditions en fonction de l'âge entré*/
-    if (age<=0) {
+    if (isNaN(age)){
+      alert('Ce n\'est pas un nombre!');
+     }else if (age<=0) {
       alert('Ce n\'est pas un âge crédible!');
      }else if (1<=age && age<18){
       alert('Vous n\'êtes pas majeur!');
