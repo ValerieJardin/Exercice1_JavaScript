@@ -8,23 +8,29 @@
         <form>
             <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
             <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
-            <button id="valider" name="valider" onclick="check()">Valider</button>
+            <button id="valider" name="valider" onclick="alert(calculation());">Valider</button>
+            <!--le onclick alert sert à faire le return qui conduit à ne pas faire d'alert en fin de fonction.-->
         </form>
   <script>
-  /*Demander à l’utilisateur sa pointure et son année de naissance. Créer une fonction qui fait les calculs suivants :
-      Multiplier la pointure par 2
-      Ajouter 5 au résultat
-      Multiplier le tout par 50
-      Soustraire l’année de naissance
-      Ajouter au tout 1766
-  La fonction doit retourner le résultat. Tester avec votre date de naissance et votre pointure. Attention : n'utiliser une seule variable « resultat ».*/
-  function check(){
-    /*Déclaration des variableinput*/
+  function calculation(){
+    /*Déclaration des variable input*/
     var foot = document.getElementById('pointure').value;
     var born = document.getElementById('annee').value;
-    //Déclaration des variables resultat
-    var result = ((parseInt(((foot*2)+5)*50)-parseInt(born)))+1766;
-    alert('Voici le résultat : ' + result);
+    var result = 0;
+    //Les conditions
+    if (isNaN(foot) || isNaN(born) || foot == '' || born == ''){
+      alert('Vous n\'avez pas entré un chiffre!')
+    }else{
+      //Déclaration des variables resultat
+      var result = ((parseInt(((foot*2)+5)*50)-parseInt(born)))+1766;
+      /* Autre codage possible :
+        var result = pointure * 2;
+        result += 5;
+        result *=50;
+        result -= parseInt(born);
+        result += 1776; */
+    }
+      return result;
   }
   </script>
     </body>
