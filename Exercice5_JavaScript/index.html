@@ -8,15 +8,21 @@
     <form>
         <label for="firstNumber"> Votre premier nombre à virgule : </label><input type="text" name="firstNumber" id="firstNumber"/>
         <label for="secondNumber"> Votre deuxième nombre à virgule : </label><input type="text" name="secondNumber" id="secondNumber"/>
-        <button  name="valider" id="valider" onclick="check()">Valider</button>
+        <button  name="valider" id="valider" onClick="check()">Valider</button>
     </form>
     <script>
-    function check() {
+    function check(){
+    /*Déclaration des variables input*/
       var first = document.getElementById('firstNumber').value;
       var second = document.getElementById('secondNumber').value;
-      var result = parseInt(first) * parseFloat(second);
-      alert('Voici le résultat : ' + result);
-    }
+        //L'opérateur ! indique l'inverse de la valeur
+      if (!parseInt(first)||!parseInt(second)){
+        alert('Il faut des nombres');
+      } else {
+        var result = parseInt(first)*parseFloat(second);
+        alert('Voici le résultat : ' + result);
+      }
+      }
     </script>
   </body>
 </html>
