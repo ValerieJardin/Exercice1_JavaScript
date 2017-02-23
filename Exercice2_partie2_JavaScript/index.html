@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/ >
+  </form>
+  <script>
+  var nom = document.getElementById('nom'); //Récupération de l'input
+  nom.addEventListener('blur',function(e){ //Création de l'évènement perte de focus blur
+    alert('Merci de votre participation'); //Boite de dialogue lors de la perte du focus
+  });
+  </script>
+</body>
+</html>
