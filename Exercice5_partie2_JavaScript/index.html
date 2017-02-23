@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="images/image1.jpg" id="image1" onmouseover="changeImage1()" />
+      <img src="images/image2.jpg" id="image2" onmouseover="changeImage2()" />
+      <img src="images/image3.jpg" id="image3" onmouseover="changeImage3()" />
+      <img src="images/image4.jpg" id="image4" onmouseover="changeImage4()" />
+      <img src="images/image5.jpg" id="image5" onmouseover="changeImage5()" />
+    </div>
+    <script>
+      function changeImage1(){
+          var changeImage = document.getElementById('image1');
+          changeImage.src = "images/image1_2.jpg";
+      }
+      function changeImage2(){
+          var changeImage = document.getElementById('image2');
+          changeImage.src = "images/image2_2.jpg";
+      }
+      function changeImage3(){
+          var changeImage = document.getElementById('image3');
+          changeImage.src = "images/image3_2.jpg";
+      }
+      function changeImage4(){
+          var changeImage = document.getElementById('image4');
+          changeImage.src = "images/image4_2.jpg";
+      }
+      function changeImage5(){
+          var changeImage = document.getElementById('image5');
+          changeImage.src = "images/image5_2.jpg";
+      }           
+    </script>
+  </body>
+</html>
