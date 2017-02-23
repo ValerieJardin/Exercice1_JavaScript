@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="Doe" id="nom" />
+    <label for="prenom">Votre prenom  : </label><input type="text" name="prenom" value="John" id="prenom" />
+    <label for="ville">Votre ville  : </label><input type="text" name="ville" value="New York" id="ville" />
+    <button type="button" id="button" name="button">RAZ</button> <!--Création de id button-->
+  </form>
+  <script>
+  /* Création de l'événement donnant l'action au bouton RAZ + Déclaration de la fonction*/
+  button.addEventListener('click', function () {
+  /* Récupération des input et leurs donner une valeur vide lors du click sur le bouton RAZ*/
+    document.getElementById('nom').value = '';
+    document.getElementById('prenom').value = '';
+    document.getElementById('ville').value = '';
+  });
+  </script>
+</body>
+</html>
