@@ -11,9 +11,11 @@
     <button type="button" name="button" id = "verification">Vérification</button>
   </form>
   <script>
-  document.getElementById('verification').addEventListener('click', function(){
+  document.getElementById('verification').addEventListener('click', function(){ //Déclaration de l'événement click et de la fonction
+/* Déclaration des différentes variables*/
     var password = document.getElementById('motdepasse');
     var confirmation = document.getElementById('confirmation');
+    /* Conditions*/
     if ((confirmation.value) != (password.value)) {
       confirmation.style.borderColor = 'red';
       password.style.borderColor = 'red';
