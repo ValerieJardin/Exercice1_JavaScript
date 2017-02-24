@@ -7,11 +7,11 @@
   <body>
       <img src="images/image1.jpg" id="image1" />
       <script>
-        var image1 = document.getElementById('image1');
-        image1.addEventListener('mouseover', function(){
-        image1.style.border = "3px solid red";
+        var image1 = document.getElementById('image1'); // Déclaration de la variable image1 qui se situe dans le document
+        image1.addEventListener('mouseover', function(){ // Déclaration de l'événement et de la fonction au survol de l'image
+        image1.style.border = "3px solid red"; // Création de la bordure
         });
-        image1.addEventListener('mouseout', function(){
+        image1.addEventListener('mouseout', function(){ // Evénement et fonction inverse 
         image1.style.border = "";
         });
       </script>
