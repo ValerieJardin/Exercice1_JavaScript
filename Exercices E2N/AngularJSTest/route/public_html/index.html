@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Exercice route</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="bower_components/angular/angular.js" type="text/javascript"></script>
+        <script src="bower_components/angular-route/angular-route.js" type="text/javascript"></script>
+        <script src="assets/js/route.js" type="text/javascript"></script>
+    </head>
+    <body ng-app="appRoute">
+        <h1>Exercice sur les routes</h1>
+        <!-- Dans ce div on utilisera ngRoute donc c'est ici que l'on injectera différents fichier -->
+        <div ng-view>
+            
+        </div>
+        <nav>
+            <a href="#!/home">Page d'accueil</a>
+            <a href="#!/contact">Formulaire de contact</a>
+        </nav>
+    </body>
+</html>

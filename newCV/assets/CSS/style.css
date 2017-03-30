@@ -1,0 +1,76 @@
+/*--Page d'accueil--*/
+body{
+  background-image:url("/home/valerie/Documents/newCV/assets/img/fond-ecran.jpg");
+}
+#accroche{
+  display: inline-flex;
+  color:#FFD2F9;
+}
+#identity{
+
+}
+#name{
+  color: #147C99;
+}
+#introductionText{
+  font-style: oblique;
+}
+#adage{
+  margin-top: 15%;
+  color: #EEBA55;
+  font-family: Calligraffitti;
+
+}
+#menu{
+  width: 100%;
+  padding-top: 40px;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+a span {
+  /* -- Les span contenus dans des a sont cachés-- */
+  display: none;
+  position: absolute;
+  font-family: Pacifico;
+  font-size: 20px;
+}
+a:hover span {
+  /* -- Les span sont affichés au survol du a -- */
+  display: block;
+}
+#competences{
+  height: 100%;
+  width: 100%;
+  padding-top: 30px;
+}
+#projet{
+  height: 70%;
+  width: 70%;
+}
+#evolution{
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+}
+#contact{
+  height: 70%;
+  width: 70%;
+  padding-top: 20px;
+}
+/*--Page sur les compétences--*/
+#pageCompetences{
+  background-image: url("/home/valerie/Documents/newCV/assets/img/fond-compétences.jpg");
+}
+.inter_title, .assets{
+  font-family: Pacifico;
+  color: #FFD2F9;
+}
+.assets{
+  font-size: 20px;
+}
+/*--Page sur mes projets--*/
+/*--Page sur mon évolution--*/
+#pageEvolution{
+  background-image: url("/home/valerie/Documents/newCV/assets/img/fond-évolution.jpeg");
+}
+/*--Page sur me contacter--*/

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1 partie 3</title>
+  </head>
+  <body>
+    <!--Dans le fichier HTML fourni, au survol de l'image ajouter une bordure de 3px
+rouge et la retirer quand la souris ne la survole plus.
+
+   Avec onmouseover, j'appelle ma fonction redBorder qui va changer le style.
+   Avec onmouseout, j'appelle ma fonction noBorder qui rétablir le style initial.
+   <img src="image1.jpg" id="image1" onmouseover="redBorder()" onmouseout="noBorder()"/>
+   <script>
+   //redBorder est la fonction qui va changer le style css
+   function redBorder() {
+     //ma variable img appelle l'image1
+     var img = document.getElementById("image1");
+       //variable . style . bordure = je change le style en faisant apparaître une bordure
+       img.style.border = "3px solid red";
+   }
+   //noBorder est la fonction qui va annuler la précédente
+   function noBorder() {
+     //ma variable img appelle l'image1
+     var img = document.getElementById("image1");
+     //variable . style . bordure = aucune (je n'en veux plus)
+     img.style.border = "none";}-->
+      <img src="images/image1.jpg" id="image1" />
+      <script>
+        var image1 = document.getElementById('image1'); // Déclaration de la variable image1 qui se situe dans le document
+        image1.addEventListener('mouseover', function(){ // Déclaration de l'événement et de la fonction au survol de l'image
+        image1.style.border = "3px solid red"; // Création de la bordure
+        });
+        image1.addEventListener('mouseout', function(){ // Evénement et fonction inverse
+        image1.style.border = "";
+        });
+      </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+body{
+  background-color: white;
+}
+.nav navbar-nav{
+  background-color: #F0F0F0;
+  align-content: flex-start;
+}
+.active{
+  background: #144A82;
+}
+.media{
+  vertical-align: middle;
+}
+.styleNone{
+  list-style: none;
+
+  vertical-align: text-top;
+}
+.media-body{
+  height: 20%;
+  vertical-align: middle;
+  padding-top: 20%;
+
+}
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+  vertical-align: text-top;
+}

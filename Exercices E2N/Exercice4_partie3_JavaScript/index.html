@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 4</title>
+</head>
+<body>
+  <form>
+    <label for="motdepasse">Votre mot de passe : </label><input type="text" name="motdepasse" value="" id="motdepasse" />
+    <label for="confirmation">Confirmez : </label><input type="text" name="confirmation" value="" id="confirmation" />
+    <button type="button" name="button" id = "verification">Vérification</button> <!-- Ajout id -->
+  </form>
+  <script>
+  document.getElementById('verification').addEventListener('click', function(){ //Déclaration de l'événement click et de la fonction
+/* Déclaration des différentes variables*/
+    var password = document.getElementById('motdepasse');
+    var confirmation = document.getElementById('confirmation');
+    /* Conditions*/
+    if ((confirmation.value) != (password.value)) { // != opérateur signifiant différent de
+      confirmation.style.borderColor = 'red';
+      password.style.borderColor = 'red';
+    } else {
+      confirmation.style.borderColor = 'green';
+      password.style.borderColor = 'green';
+    }
+  });
+  </script>
+</body>
+</html>

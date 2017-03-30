@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercice_8</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form>
+            <label for="age">Votre âge : </label><input type="text" id="age" name="age"/><br/>
+            <button id="valider" name="valider">Valider</button>
+        </form>
+        <script>
+  /*Appel du bouton, déclaration de l'événement et déclaration de l'input de demande d'âge et de la fonction.*/
+  document.getElementById('valider').addEventListener('click',function(){
+    var age = document.getElementById('age').value;
+  /*Déclaration des différentes conditions en fonction de l'âge entré*/
+    if (isNaN(age)){
+      alert('Ce n\'est pas un nombre!');
+     }else if (age<=0) {
+      alert('Ce n\'est pas un âge crédible!');
+     }else if (1<=age && age<18){
+      alert('Vous n\'êtes pas majeur!');
+     }else if (18<=age && age<=120){
+      alert('Vous êtes majeur!');
+     }else if (age>120) {
+      alert('Pas possible!!');
+     }else{
+      alert('Relisez la consigne!');
+    }
+  });
+        </script>
+
+ /* Code d'Elodie : 
+ function maj(){ //déclare la fction.
+   var age = document.getElementById("age").value;  // on appel l'input avec l'id
+   if (isNaN(age)){                                 // pr verifier qu'il a mis un nbre
+     alert("vous devez mettre un age");            // affiche "vous devez mettre un age"
+   }else{                                          // sinon
+     if( (age > 0) && (age < 18) ){                // entre 0 et 18 ans
+       alert("vous etes mineur");                  // affiche mineur
+     }else if( (age >= 18) && (age <= 100) ){      // entre 18 et 100 ans
+       alert("vous etes majeur");                  // affiche majeur
+     }else{                                        // sinon
+       alert("Vous avez rien compris");            // affiche " vs avez rien compris"
+     }
+   }
+}*/
+    </body>
+</html>

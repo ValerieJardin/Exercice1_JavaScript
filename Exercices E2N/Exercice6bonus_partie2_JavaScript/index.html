@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title>Exo6bonus Javascript Partie 2</title>
+ </head>
+ <body>
+     <img src="image1.jpg" id="image1" onmouseover="picture('image1')" onmouseout="pix('image1')"/>
+     <img src="image2.jpg" id="image2" onmouseover="picture('image2')" onmouseout="pix('image2')"/>
+     <img src="image3.jpg" id="image3" onmouseover="picture('image3')" onmouseout="pix('image3')"/>
+     <img src="image4.jpg" id="image4" onmouseover="picture('image4')" onmouseout="pix('image4')"/>
+     <img src="image5.jpg" id="image5" onmouseover="picture('image5')" onmouseout="pix('image5')"/>
+     <script>
+     function picture(photo) {
+       var img = document.getElementById(photo);
+       img.src= photo + '_2.jpg';
+     };
+     function pix(image) {
+       var img = document.getElementById(image);
+       img.src = image + '.jpg';
+     }
+     </script>
+ </body>
+</html>

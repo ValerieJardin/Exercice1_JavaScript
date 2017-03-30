@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <!--Création des id-->
+<a href="#" id = "show">Afficher</a>
+<a href="#" id = "hide">Masquer</a>
+  <div id="texte">
+    <p>Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.</p>
+  </div>
+  <script>
+  /*  Code de Véronique :
+  <a href="#" onClick="show()">Afficher</a>
+ <a href="#" onClick="hide()">Masquer</a>
+ <div id="texte">
+   <p>Joseph Dacre Carlyle (Carlisle, 4 juin 1758 - Newcastle upon Tyne, 12 avril 1804) est un orientaliste anglais.Après ses études à l'université de Cambridge, il y devint professeur d'arabe. En 1799, il fut attaché par le gouvernement britannique à l'ambassade de Lord Elgin dans l'Empire ottoman. Il était chargé d'explorer les bibliothèques de la région (principalement celle du Sérail) pour y découvrir (et y acquérir) des manuscrits inédits de textes antiques. Il se rendit aussi en Égypte, en Terre sainte et au mont Athos. Sa mission fut, de son point de vue, un échec. Il acheta quelques centaines d'ouvrages, principalement dans les bazars de Constantinople, mais aucun ne contenait de texte inédit. Cependant, la façon dont certains manuscrits avaient été acquis, principalement ceux du patriarche de Jérusalem Anthème Ier, ainsi que la querelle entamée sur la plaine de Troie entre Carlyle et un autre professeur de Cambridge, Edward Daniel Clarke, allaient être utilisées, après la mort de Carlyle, contre Lord Elgin, dans les controverses autour de l'acquisition des « marbres d'Elgin ».De retour en Grande-Bretagne à l'automne 1801, Joseph Dacre Carlyle entama une traduction en arabe de la Bible. Sa mort en avril 1804 coupa court à ce travail.</p>
+ </div>
+ <script>
+ /*Dans le fichier HTML fourni, faire afficher ou masquer le texte en fonction de l'ancre.*/
+ /*dans le HTML je rajoute sur les ancres chaque fonction correspondante
+ puis je déclare ma fonction masquer
+ function hide(){ /*elle va masquer l'id du document en appliquant le style display "none"
+   document.getElementById("texte").style.display = "none";
+ }
+ function show(){/*elle va afficher l'id du document en appliquant le style display "block
+   document.getElementById("texte").style.display = "block";
+ }*/
+ 
+  /* Déclaration des différentes variables*/
+    var texte = document.getElementById('texte');
+    var show = document.getElementById('show');
+    var hide = document.getElementById('hide');
+    /*Déclaration des fonction hide et show*/
+    show.addEventListener('click', function(){
+    texte.style.display = "block";
+    });
+    hide.addEventListener('click', function(){
+    texte.style.display = "none";
+    });
+  </script>
+</body>
+</html>
